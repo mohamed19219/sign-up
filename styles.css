@@ -1,0 +1,203 @@
+/* إعادة تعيين الأنماط الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* خلفية الصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* حاوية النموذج */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: scale(1.05); /* تكبير النموذج عند التمرير */
+}
+
+/* شعار التطبيق */
+.login-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* تصميم الحقول */
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند التمرير على الحقول */
+.login-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* زر الدخول */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
+
+/* رابط كلمة المرور */
+.forgot-password a {
+    color: #3498db;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* التصميم النصي أسفل النموذج */
+.sign-up {
+    margin-top: 20px;
+}
+
+.sign-up p {
+    font-size: 14px;
+}
+
+.sign-up a {
+    color: #3498db;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* تصميم الحقول بشكل جميل */
+input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* شريط التقدم */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: none; /* الشريط مخفي حتى يتم تفعيله */
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* تصميم رسائل التنبيه */
+.error-message {
+    display: none;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.error-message.show {
+    display: block;
+}
+
+/* تصميم شريط الترحيب */
+.welcome-message {
+    display: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.welcome-message.show {
+    display: block;
+}
+
+/* تصميم أزرار تسجيل الدخول عبر الشبكات الاجتماعية */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.google-btn:hover {
+    background-color: #c1351d;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background-color: #2d4373;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
